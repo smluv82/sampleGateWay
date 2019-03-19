@@ -1,6 +1,6 @@
 #SERVER CONFIGURATION
 server:
-   port: ${PORT:5002}
+   port: ${PORT:5003}
    servlet:
       application-display-name: sampleGateWay
 
@@ -12,5 +12,6 @@ spring:
       active: local
    cloud:
       config:
+         #http://localhost:5001/sampleGateWay/local
          uri: http://localhost:5001
          name: sampleGateWay
